@@ -16,6 +16,7 @@ provider "aws" {
 resource "aws_instance" "example_server" {
   ami           = "ami-0d18e50ca22537278" #Ubuntu 22.04
   instance_type = "t2.micro"
+  key_name      = "boiko"
 
   tags = {
     Name = "Boiko HW5"
